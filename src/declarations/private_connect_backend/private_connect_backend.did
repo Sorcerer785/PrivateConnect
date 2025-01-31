@@ -1,0 +1,12 @@
+type Message = 
+ record {
+   content: text;
+   id: text;
+   sender: principal;
+   timestamp: int;
+ };
+service : {
+  deleteMessage: (text) -> (bool);
+  getMessages: () -> (vec Message);
+  sendMessage: (text) -> (text);
+}
