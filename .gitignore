@@ -6,13 +6,8 @@ node_modules/
 # Testing
 /coverage
 
-# Production
-/build
-/dist
+]
 
-# Internet Computer
-.dfx/
-.vessel/
 
 # Environment files
 .env
