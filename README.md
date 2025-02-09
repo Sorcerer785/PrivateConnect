@@ -43,31 +43,7 @@ graph TB
     class Theme,Crypto,Identity,Meta,SD accent
 ```
 
-## 🔐 Security Flow
 
-```mermaid
-sequenceDiagram
-    participant User
-    participant Frontend
-    participant E2E as Encryption
-    participant ICP
-    participant Calimero
-
-    User->>Frontend: Send Message
-    Frontend->>E2E: Encrypt Message
-    E2E->>Frontend: Encrypted Data
-    Frontend->>ICP: Store Message
-    ICP->>Calimero: Protect Metadata
-    
-    Note over Frontend,ICP: End-to-End Encryption
-    Note over ICP,Calimero: Metadata Protection
-    
-    style User fill:#0084ff,stroke:#0073e6,stroke-width:2px,color:white
-    style Frontend fill:#2d2d2d,stroke:#404040,stroke-width:2px,color:white
-    style E2E fill:#00b4d8,stroke:#0099b8,stroke-width:2px,color:white
-    style ICP fill:#0084ff,stroke:#0073e6,stroke-width:2px,color:white
-    style Calimero fill:#2d2d2d,stroke:#404040,stroke-width:2px,color:white
-```
 
 ## 🎨 Theme System
 
